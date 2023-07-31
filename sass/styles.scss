@@ -221,7 +221,7 @@ Animations
 }
 
 /* ==========================================================================
-Waypoinsts
+Waypoints
 ========================================================================== */
 .wp1,
 .wp2,
@@ -237,6 +237,11 @@ Waypoinsts
 .wp8, .wp9 {
   -webkit-animation-delay: 0.3s;
   animation-delay: 0.3s
+}
+
+.wp1, .wp2 {
+  position: absolute !important;
+  bottom: 0 !important;
 }
 
 
@@ -1095,4 +1100,8 @@ body.modal-open {
 
 .modal-body {
   padding: 25px;
+}
+
+#the-story {
+  white-space: pre-line !important;    
 }
