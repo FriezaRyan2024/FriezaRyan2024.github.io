@@ -1,5 +1,8 @@
 $(document).ready(function () {
 
+    var noextras = document.getElementById('plusones');
+    noextras.style.display = 'none';
+
     /***************** Waypoints ******************/
 
     $('.wp1').waypoint(function () {
@@ -137,7 +140,7 @@ $(document).ready(function () {
     });
 
     /********************** Social Share buttons ***********************/
-    var share_bar = document.getElementsByClassName('share-bar');
+    // var share_bar = document.getElementsByClassName('share-bar');
     var po = document.createElement('script');
     po.type = 'text/javascript';
     po.async = true;
@@ -145,21 +148,21 @@ $(document).ready(function () {
     var s = document.getElementsByTagName('script')[0];
     s.parentNode.insertBefore(po, s);
 
-    for (var i = 0; i < share_bar.length; i++) {
-        var html = '<iframe allowtransparency="true" frameborder="0" scrolling="no"' +
-            'src="https://platform.twitter.com/widgets/tweet_button.html?url=' + encodeURIComponent(window.location) + '&amp;text=' + encodeURIComponent(document.title) + '&amp;via=ramswarooppatra&amp;hashtags=ramandantara&amp;count=horizontal"' +
-            'style="width:105px; height:21px;">' +
-            '</iframe>' +
+    // for (var i = 0; i < share_bar.length; i++) {
+    //     var html = '<iframe allowtransparency="true" frameborder="0" scrolling="no"' +
+    //         'src="https://platform.twitter.com/widgets/tweet_button.html?url=' + encodeURIComponent(window.location) + '&amp;text=' + encodeURIComponent(document.title) + '&amp;hashtags=BecomingBrooks2024&amp;count=horizontal"' +
+    //         'style="width:105px; height:21px;">' +
+    //         '</iframe>' +
 
-            '<iframe src="//www.facebook.com/plugins/like.php?href=' + encodeURIComponent(window.location) + '&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=21&amp;appId=101094500229731&amp;width=150" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:150px; height:21px;" allowTransparency="true"></iframe>' +
+    //         '<iframe src="//www.instagram.com/plugins/like.php?href=' + encodeURIComponent(window.location) + '&amp;width&amp;layout=button_count&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=21&amp;appId=101094500229731&amp;width=150" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:150px; height:21px;" allowTransparency="true"></iframe>' +
 
-            '<div class="g-plusone" data-size="medium"></div>';
+    //         '<div class="g-plusone" data-size="medium"></div>';
 
-        // '<iframe src="https://plusone.google.com/_/+1/fastbutton?bsv&amp;size=medium&amp;url=' + encodeURIComponent(window.location) + '" allowtransparency="true" frameborder="0" scrolling="no" title="+1" style="width:105px; height:21px;"></iframe>';
+    //     // '<iframe src="https://plusone.google.com/_/+1/fastbutton?bsv&amp;size=medium&amp;url=' + encodeURIComponent(window.location) + '" allowtransparency="true" frameborder="0" scrolling="no" title="+1" style="width:105px; height:21px;"></iframe>';
 
-        share_bar[i].innerHTML = html;
-        share_bar[i].style.display = 'inline-block';
-    }
+    //     share_bar[i].innerHTML = html;
+    //     share_bar[i].style.display = 'inline-block';
+    // }
 
     /********************** Embed youtube video *********************/
     $('.player').YTPlayer();
@@ -215,11 +218,11 @@ $(document).ready(function () {
 
         $('#alert-wrapper').html(alert_markup('info', '<strong>Just a sec!</strong> We are saving your details.'));
 
-        if (MD5($('#invite_code').val()) !== 'b0e53b10c1f55ede516b240036b88f40'
-            && MD5($('#invite_code').val()) !== '2ac7f43695eb0479d5846bb38eec59cc') {
-            $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect. Try again, or get in contact with Ryan for some IT support ;)'));
+        if (MD5($('#invite_code').val()) !== '063380365592af315c35e0e60518bc26'
+            && MD5($('#invite_code').val()) !== '063380365592af315c35e0e60518bc26') {
+            $('#alert-wrapper').html(alert_markup('danger', '<strong>Sorry!</strong> Your invite code is incorrect. Try again, or if you\'re still stuck: Get in contact with me (Ryan) for some IT support ;)'));
         } else {
-            $.post('https://script.google.com/macros/s/AKfycbyo0rEknln8LedEP3bkONsfOh776IR5lFidLhJFQ6jdvRiH4dKvHZmtoIybvnxpxYr2cA/exec', data)
+            $.post('https://script.google.com/macros/s/AKfycbzYNpe2IR7m_XY9XCAJqlZs4EKH_VddIxL6yz87FisxVJV_ZshDjs7Vih4KcpHCLtk-/exec', data)
                 .done(function (data) {
                     console.log(data);
                     if (data.result === "error") {
@@ -487,7 +490,6 @@ var MD5 = function (string) {
         c = AddUnsigned(c, CC);
         d = AddUnsigned(d, DD);
     }
-
     var temp = WordToHex(a) + WordToHex(b) + WordToHex(c) + WordToHex(d);
 
     return temp.toLowerCase();
