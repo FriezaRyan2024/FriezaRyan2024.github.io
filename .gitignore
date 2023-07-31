@@ -43,3 +43,8 @@ typings/
 .sass-cache/
 *.css.map
 node_modules/
+node_modules/braces/.DS_Store
+node_modules/chokidar/.DS_Store
+**/.DS_Store
+node_modules/**/*.*
+node_modules/**
