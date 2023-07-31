@@ -18,10 +18,10 @@ $bold: 700;
 
 $font-size-h1: 60px;
 $font-size-h2: 40px;
-$font-size-h3: 24px;
-$font-size-h4: 18px;
-$font-size-h5: 15px;
-$font-size-p: 15px;
+$font-size-h3: 26px;
+$font-size-h4: 22px;
+$font-size-h5: 20px;
+$font-size-p: 20px;
 $nav-font-size: 13px;
 $blog-post-title: 11px;
 
@@ -65,6 +65,9 @@ h3 {
 }
 
 h4 {
+  color: $h4-color;
+  text-transform: uppercase;
+  font-weight: $bold;
   font-size: $font-size-h4;
 }
 

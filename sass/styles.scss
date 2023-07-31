@@ -27,8 +27,7 @@ Global Styles
 }
 
 a {
-  color: $accent-color;
-  text-shadow: 1px 1px 2px $accent-shadow;
+  color: $ps-hue6;
   -webkit-transition-timing-function: ease;
   transition-timing-function: ease;
   -webkit-transition-duration: 200ms;
@@ -39,7 +38,7 @@ a {
 
 a:hover,
 a:focus {
-  color: $accent-color-hover;
+  color: $alt-accent-color;
   text-decoration: none;
 }
 
@@ -258,7 +257,7 @@ Navigation
 ========================================================================== */
 .header-nav.open {
   visibility: visible;
-  opacity: 0.9;
+  opacity: 0.8;
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
 }
@@ -409,12 +408,13 @@ header {
   transition: padding 300ms ease-in-out;
 
   a {
-    color: $txt-light;
+    color: $accent-color;
     text-transform: uppercase;
     font-size: $nav-font-size;
 
     &.login {
       margin-right: 20px;
+      padding: 8px 30px;
     }
   }
 
@@ -435,12 +435,12 @@ header {
 
       a {
         color: $accent-color;
-        text-shadow: 1px 1px 1px $accent-shadow;
+        text-shadow: 1px 1px 2px $accent-shadow;
         padding-right: 25px;
 
         &:hover {
           color: $txt-light;
-          text-shadow: 1px 1px 1px $accent-shadow;
+          text-shadow: 1px 1px 2px $accent-shadow;
         }
       }
 
@@ -457,9 +457,12 @@ header {
       a {
         color: $accent-color;
         text-shadow: 1px 1px 1px $accent-shadow;
-
+        background-color: $accent-shadow;
+        opacity: 0.7;
+        
         &:hover {
-          color: $ps-hue3;
+          color: #FFF;
+          background-color: $accent-color;
         }
       }
     }
@@ -1114,4 +1117,9 @@ body.modal-open {
 
 .floral {
   border-bottom: thick double $ps-hue6;
+}
+
+.strong {
+  color: $alt-accent-color;
+  text-shadow: 1px 1px 2px $ps-hue9;
 }
