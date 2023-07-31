@@ -22,19 +22,9 @@ _See [wedding.rampatra.com](http://wedding.rampatra.com/) for a demo. Use invite
 5. That's it, open `index.html` file on your browser by just double-clicking on it.
 
 # Documentation
-I have written a 
-[blog post describing all the features of this wedding website](https://blog.rampatra.com/wedding-website) and how to
-customize each of them according to your needs.
+The original developer has written a 
+[blog post describing all the features of the wedding website I used as a reference](https://blog.rampatra.com/wedding-website) and how to customize it according to your needs.
 
-# About Me
-Hello, my name is Ram. I am an Engineering Manager at [Mastercard R&D Labs](https://www.mastercard.com/). I enjoy making teeny tiny applications in
-my leisure time and this is one of them. Now that my wedding is over, I am open-sourcing the project. Hope you like it!
+# Special Thanks
+Forked repo from `https://github.com/rampatra/wedding-website.git` as a starting point which saved me a LOT of headaches, so thank you for the runway!
 
-Lastly, if you use a Mac then you may also love [Presentify](https://presentify.compzets.com/). Give it a whirl and let me know your thoughts.
-
-# Contribute
-Firstly, a big thanks 🙏🏻 for the overwhelming response on [HackerNews](https://news.ycombinator.com/item?id=18556787) and [Reddit](https://www.reddit.com/r/opensource/comments/a1bx4h/i_am_open_sourcing_my_wedding_website_on_my_first/). I would be more than happy for [PRs](https://help.github.com/articles/about-pull-requests/) or [sponsors](https://www.paypal.me/iamrampatra).
-
-<a href="https://www.buymeacoffee.com/rampatra" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: auto !important;width: auto !important;" ></a>
-
-_P.S. For any queries or concerns, you can reach out to me on [Twitter](https://twitter.com/ram__patra). I'll try my best to help._
