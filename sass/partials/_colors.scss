@@ -1,39 +1,67 @@
-// Original colours
-$olive-green: #57522A; // RGB: 87, 82, 42
-$light-brown: #B49281; // RGB: 180, 146, 129
-$beige-white: #EEDCCE; // RGB: 238, 220, 206
-$yellow-accent: #E7A721; // RGB: 231, 167, 33
-$slate-grey: #3C3B39; // RGB: 60, 59, 57
+// "Save the date" palette: 
+$sd-hue1: #f2f2ea;
+$sd-hue2: #c3c1b9;
+$sd-hue3: #cccccc;
+$sd-hue4: #acacac;
+$sd-hue5: #99968f;
+$sd-hue6: #b4acac;
+$sd-hue7: #747c74;
+$sd-hue8: #7c7473;
+$sd-hue9: #a9884d;
+$sd-hue10: #444340;
 
-// rgba(231,167,33,.7333333333)
+// Photoshoot colour palette
+$ps-hue1: #D3D1C4;
+$ps-hue2: #C1C8C1;
+$ps-hue3: #CA958E;
+$ps-hue4: #985D40;
+$ps-hue5: #6E6A36;
+$ps-hue6: #6A6E49;
+$ps-hue7: #726C4D;
+$ps-hue8: #5E492A;
+$ps-hue9: #464531;
+$ps-hue10: #0E0F0A;
+
+$mystery-colour: #372428;
+
+$main-light: $ps-hue1;
+$main-dark: $ps-hue10;
+
+// Original colours from previous webpage
+// $olive-green: #57522A; // RGB: 87, 82, 42
+// $light-brown: #B49281; // RGB: 180, 146, 129
+// $beige-white: #EEDCCE; // RGB: 238, 220, 206
+// $yellow-accent: #E7A721; // RGB: 231, 167, 33
+// $slate-grey: #3C3B39; // RGB: 60, 59, 57
 
 // Text colours
-$txt-primary: rgba(60, 59, 57, 0.6);
+$txt-primary: $ps-hue10;
 // body font
-$txt-secondary: #57522A;
+$txt-secondary: $ps-hue9;
 // heading font
-$txt-light: #EEDCCE;
+$txt-light: $ps-hue1;
 // header/hero
-$txt-accent: #57522A;
-$form-placeholder: #B49281;
+$txt-accent: $ps-hue4;
+$form-placeholder: $ps-hue8;
 // form placeholder text
 // Global colours
-$accent-color: #E7A721;
+$accent-color: $ps-hue5;
 // global accent colour
-$accent-color-hover: #E7A72188;
+$accent-color-hover: $ps-hue2;
 // global accent colour hover
-$white-color: #EEDCCE;
-$black-color: #3C3B39;
+$white-color: $sd-hue1;
+$black-color: $ps-hue10;
 // Typography colours
-$h2-color: #252423;
-$h3-color: #3C3B39;
-$h5-color: #4d4b48;
+$h1-color: $ps-hue10;
+$h2-color: $sd-hue10;
+$h3-color: $ps-hue8;
+$h5-color: $ps-hue6;
 // Layout colours
-$section-light: #EEDCCE;
-$section-dark: #d0c1b5;
-$to-top-bg: #5a5956;
-$footer-primary: #3C3B39;
-$footer-secondary: #333230;
+$section-light: $sd-hue1;
+$section-dark: $sd-hue6;
+$to-top-bg: $ps-hue6;
+$footer-primary: $ps-hue6;
+$footer-secondary: $ps-hue4;
 // Keylines
-$keyline-color: #EEDCCE;
-$footer-keyline-color: #B49281;
+$keyline-color: $ps-hue2;
+$footer-keyline-color: $ps-hue3;
