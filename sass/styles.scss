@@ -362,10 +362,14 @@ Hero
   h1 {
     color: $txt-light;
     margin-bottom: 40px;
+    font-family: $accent-font;
+    text-shadow: 1px 1px 2px $accent-color;
   }
 
   p.intro {
     color: $txt-light;
+    font-family: $accent-font;
+    text-shadow: 1px 1px 2px $accent-color;
     font-size: 20px;
     font-weight: 300;
     margin-bottom: 80px;
@@ -448,10 +452,10 @@ header {
       display: inline;
 
       a {
-        color: $txt-light;
+        color: $accent-color;
 
         &:hover {
-          color: $accent-color;
+          color: $txt-light;
         }
       }
     }
@@ -958,6 +962,13 @@ RSVP form
 ========================================================================== */
 .rsvp {
   padding-bottom: 140px;
+
+  #title-rsvp {
+    color: $txt-light;
+    margin-bottom: 40px;
+    font-family: $accent-font;
+    text-shadow: 1px 1px 2px $accent-color;
+  }
 
   .rsvp-form {
     .rsvp-btn {

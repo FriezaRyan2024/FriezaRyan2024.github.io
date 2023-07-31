@@ -4,7 +4,7 @@
 
 .btn {
 	font-size: 13px;
-	//border: solid 2px;
+	border: solid 2px;
 	-moz-border-radius: 40px;
 	-webkit-border-radius: 40px;
 	border-radius: 40px;
@@ -18,7 +18,7 @@
 }
 .btn-white {
 	font-size: 13px;
-	//border: solid 2px;
+	border: solid 2px;
 	-moz-border-radius: 40px;
 	-webkit-border-radius: 40px;
 	border-radius: 40px;
@@ -31,7 +31,7 @@
 }
 .btn-fill {
 	color: $white-color;
-	//border: solid 2px $accent-color;
+	border: solid 2px $accent-color;
 	-moz-border-radius: 40px;
 	-webkit-border-radius: 40px;
 	border-radius: 40px;
@@ -49,6 +49,7 @@
 }
 .btn-large {
 	padding: 15px 40px;
+	background-color: $ps-hue2;
 }
 .btn-margin-right {
 	margin-right: 20px;
