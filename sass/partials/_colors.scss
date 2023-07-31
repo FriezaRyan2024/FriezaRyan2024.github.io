@@ -1,32 +1,39 @@
-// Colours partial
+// Original colours
+$olive-green: #57522A; // RGB: 87, 82, 42
+$light-brown: #B49281; // RGB: 180, 146, 129
+$beige-white: #EEDCCE; // RGB: 238, 220, 206
+$yellow-accent: #E7A721; // RGB: 231, 167, 33
+$slate-grey: #3C3B39; // RGB: 60, 59, 57
+
+// rgba(231,167,33,.7333333333)
 
 // Text colours
-$txt-primary: rgba(28, 54, 83, 0.6);
+$txt-primary: rgba(60, 59, 57, 0.6);
 // body font
-$txt-secondary: #3D4351;
+$txt-secondary: #57522A;
 // heading font
-$txt-light: #fff;
+$txt-light: #EEDCCE;
 // header/hero
-$txt-accent: #ACB1B4;
-$form-placeholder: #BCC1C3;
+$txt-accent: #57522A;
+$form-placeholder: #B49281;
 // form placeholder text
 // Global colours
-$accent-color: #e8ca6f;
+$accent-color: #E7A721bb;
 // global accent colour
-$accent-color-hover: #d3b56a;
+$accent-color-hover: #E7A721;
 // global accent colour hover
-$white-color: #fff;
-$black-color: #000;
+$white-color: #EEDCCE;
+$black-color: #3C3B39;
 // Typography colours
-$h2-color: #3D4351;
-$h3-color: #3D4351;
-$h5-color: #3D4351;
+$h2-color: #252423;
+$h3-color: #3C3B39;
+$h5-color: #4d4b48;
 // Layout colours
-$section-light: #fff;
-$section-dark: #f8f9fd;
-$to-top-bg: #495061;
-$footer-primary: #3D4351;
-$footer-secondary: #373D4A;
+$section-light: #EEDCCE;
+$section-dark: #d0c1b5;
+$to-top-bg: #5a5956;
+$footer-primary: #3C3B39;
+$footer-secondary: #333230;
 // Keylines
-$keyline-color: #E6E9EA;
-$footer-keyline-color: #4E566C;
+$keyline-color: #EEDCCE;
+$footer-keyline-color: #B49281;
