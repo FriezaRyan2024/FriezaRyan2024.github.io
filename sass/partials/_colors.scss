@@ -22,7 +22,8 @@ $ps-hue8: #5E492A;
 $ps-hue9: #464531;
 $ps-hue10: #0E0F0A;
 
-$mystery-colour: #372428;
+$gold-light: #d9c59c;
+$gold-dark: #ac833b;
 
 $main-light: $ps-hue1;
 $main-dark: $ps-hue10;
@@ -45,9 +46,10 @@ $txt-accent: $ps-hue4;
 $form-placeholder: $ps-hue8;
 // form placeholder text
 // Global colours
-$accent-color: $ps-hue5;
+$accent-color: $gold-light;
+$accent-shadow: $gold-dark;
 // global accent colour
-$accent-color-hover: $ps-hue2;
+$accent-color-hover: $ps-hue3;
 // global accent colour hover
 $white-color: $sd-hue1;
 $black-color: $ps-hue10;
