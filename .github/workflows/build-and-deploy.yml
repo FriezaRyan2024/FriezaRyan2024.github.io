@@ -3,32 +3,32 @@ name: Build and Deploy Website
 on:
   push:
     branches:
-    - main
+      - main
 
 jobs:
-  deploy:
+  build-and-deploy:
     runs-on: ubuntu-latest
-    env: 
-        working-directory: ./public
+
     steps:
-    - name: Checkout
-      uses: actions/checkout@v1
-    
-    - name: Setup node environment
-      uses: actions/setup-node@v3
-      with:
-        node-version: ">=18.0.0"
+      - name: Checkout
+        uses: actions/checkout@v1
 
-    - name: Install
-      run: npm install && gulp
+      - name: Setup node environment
+        uses: actions/setup-node@v3
+        with:
+          node-version: ">=18.0.0"
 
-    - name: Configure AWS Credentials
-      uses: aws-actions/configure-aws-credentials@v1
-      with:
-        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
-        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-        aws-region: eu-central-1
+      - name: Install
+        working-directory: public
+        run: npm install && gulp
 
-    - name: Deploy static site to S3 bucket
-      working-directory: ${{ env.GITHUB_WORKSPACE }}
-      run: aws s3 sync ./public/ s3://www.thebrooksfamilywedding.nl --delete
+      - name: Configure AWS Credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: eu-central-1
+
+      - name: Deploy static site to S3 bucket
+        working-directory: ${{ env.GITHUB_WORKSPACE }}
+        run: aws s3 sync ./public/ s3://www.thebrooksfamilywedding.nl --delete
