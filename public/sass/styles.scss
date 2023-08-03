@@ -347,13 +347,13 @@ Hero
 ========================================================================== */
 .hero {
   min-height: 750px;
-  background: url('../img/pics/Frieza&Ryan-ring.jpg') center center;
-  background-position-y: -30px;
+  background: url('../img/pics/hero-landscape-3.jpg') center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
   position: relative;
+  background-repeat: none !important;
 
   .down-arrow a {
     color: $txt-light;
@@ -1112,7 +1112,7 @@ body.modal-open {
 }
 
 #the-story {
-  white-space: pre-line !important;    
+  // white-space: pre-line !important;    
 }
 
 .floral {
