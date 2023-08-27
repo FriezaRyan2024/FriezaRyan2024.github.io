@@ -24,8 +24,11 @@
     "sass": "^1.25.0"
   },
   "dependencies": {
+    "@googlemaps/js-api-loader": "^1.16.2",
     "animate.css": "^3.7.2",
     "font-awesome": "^4.7.0",
-    "waypoints": "^4.0.1"
+    "waypoints": "^4.0.1",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
   }
 }

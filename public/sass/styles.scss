@@ -77,7 +77,7 @@ section .header {
 }
 
 //----------------------------------------------------
-//Yes I'm aware this is a hacky solution but I'm lazy 
+//Yes I'm aware this is a hacky solution but I'm lazy
 //----------------------------------------------------
 .tooltip-custom {
   position: absolute;
@@ -96,8 +96,8 @@ section .header {
   /* Position the tooltip */
   position: absolute;
   z-index: 1070;
-  display:  block;
-  font-family: $serif
+  display: block;
+  font-family: $serif;
 }
 
 .tooltip-custom:hover .tooltiptext-info {
@@ -121,7 +121,7 @@ section .header {
 
 .tooltip.in {
   filter: alpha(opacity=90);
-  opacity: .9;
+  opacity: 0.9;
 }
 
 .tooltip.top {
@@ -188,15 +188,15 @@ Animations
 
 @keyframes floating-arrow {
   from {
-    transform: translate(-50%, 0)
+    transform: translate(-50%, 0);
   }
 
   65% {
-    transform: translate(-50%, 15px)
+    transform: translate(-50%, 15px);
   }
 
   to {
-    transform: translate(-50%, 0)
+    transform: translate(-50%, 0);
   }
 }
 
@@ -209,15 +209,15 @@ Animations
 
 @keyframes floating-logo {
   from {
-    transform: translate(-50%, 0)
+    transform: translate(-50%, 0);
   }
 
   50% {
-    transform: translate(-50%, 10px)
+    transform: translate(-50%, 10px);
   }
 
   to {
-    transform: translate(-50%, 0)
+    transform: translate(-50%, 0);
   }
 }
 
@@ -235,9 +235,10 @@ Waypoints
 .wp9 {
   visibility: hidden;
 }
-.wp8, .wp9 {
+.wp8,
+.wp9 {
   -webkit-animation-delay: 0.3s;
-  animation-delay: 0.3s
+  animation-delay: 0.3s;
 }
 
 .bounceInLeft,
@@ -249,7 +250,7 @@ Waypoints
 .fadeInLeft,
 .fadeInRight,
 .bounceInDown {
-  visibility: visible
+  visibility: visible;
 }
 
 /* ==========================================================================
@@ -268,11 +269,11 @@ Navigation
   right: 15px;
   z-index: 999999;
   padding: 10px 35px 16px 0;
-  cursor: pointer
+  cursor: pointer;
 }
 
 .nav-toggle:focus {
-  outline: none
+  outline: none;
 }
 
 .nav-toggle span,
@@ -287,15 +288,15 @@ Navigation
   -webkit-border-radius: 1px;
   border-radius: 1px;
   background: $txt-light;
-  cursor: pointer
+  cursor: pointer;
 }
 
 .nav-toggle span:before {
-  top: -10px
+  top: -10px;
 }
 
 .nav-toggle span:after {
-  bottom: -10px
+  bottom: -10px;
 }
 
 .nav-toggle span,
@@ -304,16 +305,16 @@ Navigation
   -moz-transition: all 300ms ease-in-out;
   -o-transition: all 300ms ease-in-out;
   -webkit-transition: all 300ms ease-in-out;
-  transition: all 300ms ease-in-out
+  transition: all 300ms ease-in-out;
 }
 
 .nav-toggle.active span {
-  background-color: transparent
+  background-color: transparent;
 }
 
 .nav-toggle.active span:before,
 .nav-toggle.active span:after {
-  top: 0
+  top: 0;
 }
 
 .nav-toggle.active span:before {
@@ -321,7 +322,7 @@ Navigation
   -ms-transform: rotate(45deg);
   -o-transform: rotate(45deg);
   -webkit-transform: rotate(45deg);
-  transform: rotate(45deg)
+  transform: rotate(45deg);
 }
 
 .nav-toggle.active span:after {
@@ -330,7 +331,7 @@ Navigation
   -ms-transform: translatey(-10px) rotate(-45deg);
   -o-transform: translatey(-10px) rotate(-45deg);
   -webkit-transform: translatey(-10px) rotate(-45deg);
-  transform: translatey(-10px) rotate(-45deg)
+  transform: translatey(-10px) rotate(-45deg);
 }
 
 .navicon {
@@ -347,7 +348,8 @@ Hero
 ========================================================================== */
 .hero {
   min-height: 750px;
-  background: url('../img/pics/hero-landscape-3.jpg') center center;
+  background: linear-gradient(#6A6E4988 5%, #6A6E4966 10%, #6A6E4922),
+    url("../img/pics/hero-landscape-3.jpg") center center;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -400,10 +402,10 @@ Hero
 }
 
 header {
-  padding: 50px 0;
-  border-bottom: solid 1px $ps-hue9;
+  padding: 30px 0;
+  border-bottom: solid 1px $ps-hue6;
   position: relative;
-  width: 1170px;
+  width: 100%;
   margin: 0 auto;
   transition: padding 300ms ease-in-out;
 
@@ -415,6 +417,7 @@ header {
     &.login {
       margin-right: 20px;
       padding: 8px 30px;
+      border-radius: 40px;
     }
   }
 
@@ -424,6 +427,7 @@ header {
 
   .logo img {
     height: 80px;
+    padding-left: 30px;
   }
 
   ul.primary-nav {
@@ -459,9 +463,9 @@ header {
         text-shadow: 1px 1px 1px $accent-shadow;
         background-color: $accent-shadow;
         opacity: 0.7;
-        
+
         &:hover {
-          color: #FFF;
+          color: #fff;
           background-color: $accent-color;
         }
       }
@@ -1082,11 +1086,11 @@ footer {
 
   .to-top-wrapper .to-top {
     display: block;
-    -webkit-transition: all .3s ease-in-out;
-    -moz-transition: all .3s ease-in-out;
-    -ms-transition: all .3s ease-in-out;
-    -o-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
   }
 
   .to-top-wrapper .to-top:hover {
@@ -1112,7 +1116,7 @@ body.modal-open {
 }
 
 #the-story {
-  // white-space: pre-line !important;    
+  // white-space: pre-line !important;
 }
 
 .floral {
@@ -1122,4 +1126,9 @@ body.modal-open {
 .strong {
   color: $alt-accent-color;
   text-shadow: 1px 1px 2px $ps-hue9;
+}
+
+strong {
+  color: $strong-color;
+  text-shadow: 1px 1px 1px $ps-hue7;
 }
