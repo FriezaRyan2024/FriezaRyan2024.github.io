@@ -363,7 +363,7 @@ Hero
 
   h1 {
     color: $txt-light;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
     font-family: $accent-font;
     text-shadow: 1px 2px 2px $ps-hue10;
   }
@@ -371,8 +371,8 @@ Hero
   p.intro {
     color: $txt-light;
     font-family: $accent-font;
-    text-shadow: 1px 2px 2px $ps-hue9;
-    font-size: 20px;
+    text-shadow: 1px 2px 2px $ps-hue10;
+    font-size: 30px;
     font-weight: 300;
     margin-bottom: 80px;
   }
@@ -710,7 +710,7 @@ Features-stack
     font-size: 13px;
     font-style: italic;
     text-transform: lowercase;
-    color: $txt-primary;
+    color: $ps-hue3;
   }
 }
 
@@ -1123,12 +1123,28 @@ body.modal-open {
   border-bottom: thick double $ps-hue6;
 }
 
+.floral-end {
+  border-top: thick double $ps-hue6;
+}
+
 .strong {
-  color: $alt-accent-color;
-  text-shadow: 1px 1px 2px $ps-hue9;
+  
+  // color: $alt-accent-color;
+  // text-shadow: 1px 1px 2px $ps-hue9;
 }
 
 strong {
   color: $strong-color;
-  text-shadow: 1px 1px 1px $ps-hue7;
+  // text-shadow: 1px 1px 1px $ps-hue7;
+}
+
+.wp3,.wp4 {
+  p{
+    color: white;
+    font-weight: light;
+  }
+}
+
+#events {
+  background-color: $ps-hue9 !important;
 }
